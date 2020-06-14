@@ -1,0 +1,9 @@
+---
+applications :
+- name: covid-tracker
+  path : covid-tracker
+  memory : 32M
+  buildpacks:
+  - "https://github.com/cloudfoundry/staticfile-buildpack.git"
+  env:
+    FORCE_HTTPS: true

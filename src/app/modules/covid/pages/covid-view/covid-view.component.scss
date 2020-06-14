@@ -1,0 +1,24 @@
+.covid-view {
+  position: relative;
+  height: 60vh !important;
+  width: 80vw;
+  margin: auto;
+  padding: 2rem;
+
+  .covid-sum {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+
+    >h5 span {
+      color: red;
+    }
+  }
+}
+
+#legend {
+  font-family: avenir;
+  background: #fff;
+  list-style: none;
+  font-size: 22px;
+}

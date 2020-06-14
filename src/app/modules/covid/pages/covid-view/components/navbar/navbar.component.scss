@@ -1,0 +1,10 @@
+$black:#333;
+
+.navbar-light .navbar-nav .nav-link {
+  color: $black;
+  font-weight: 500;
+}
+
+.dropdown {
+  cursor: pointer;
+}

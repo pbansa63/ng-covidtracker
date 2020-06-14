@@ -1,0 +1,10 @@
+<app-navbar (stateValue)="viewStateCases($event)"></app-navbar>
+
+<div class="covid-view">
+  <div class="covid-sum">
+    <h5>Active Cases:<span> {{aggregate.active}}</span></h5>
+    <h5>Confirmed Cases:<span> {{aggregate.confirmed}}</span></h5>
+  </div>
+  <div id="legend"></div>
+  <canvas id="covidChart"></canvas>
+</div>
