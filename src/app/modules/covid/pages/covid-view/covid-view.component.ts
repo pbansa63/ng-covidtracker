@@ -161,7 +161,8 @@ export class CovidViewComponent {
   /* tooltip or label to show on hover on data points */
   private _displayCustomLabel(tooltipItem): string {
     let label: string;
-    this.covidNumbers.labels.map((object) => (object.num == tooltipItem.value) ? label = object.label : 'count');
+    if (this.covidNumbers.labels)
+      this.covidNumbers.labels.map((object: any) => (object.num == tooltipItem.value) ? label = object.label : 'count');
     return label;
   }
 
